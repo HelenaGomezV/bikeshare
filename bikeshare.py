@@ -187,7 +187,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def print_raw_data():    
+def print_raw_data(df):    
     cities = ['chicago', 'new york city', 'washington']
     while True:
         city = input('Specify the city. Write exit to finish. Available ' + str(cities) + ' ').lower()
@@ -213,7 +213,6 @@ def print_raw_data():
 
 def main():        
     while True:
-        print_raw_data()
         city, month, day = get_filters()        
         df = load_data(city, month, day)        
 
@@ -221,6 +220,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        print_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
