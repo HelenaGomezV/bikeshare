@@ -34,6 +34,8 @@ Ensure you have the following dependencies installed:
 pip install -r requirements.txt
 
 ```
+## Recomendation
+You can use jupyter notebook for running the bikeshare script
 
 Usage
 
