@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#Data Infromation
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -29,7 +30,7 @@ def get_filters():
                 print(city)
                 print('Error. Not available city. Check the spelling and the list of cities')
     
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month (all months, january, february, ... , june)
     months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']       
     while True:
         month = input('Specify the month. Write exit to finish. Available ' + str(months) + ' ').lower()
@@ -69,7 +70,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # load data file into a dataframe
+    # load data file into a dataframe using panda library
     df = pd.read_csv(CITY_DATA[city])    
     
     # convert the Start Time column to datetime
