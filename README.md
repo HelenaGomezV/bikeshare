@@ -5,8 +5,6 @@ Data Analysis
 
 This project explores data from the US bikeshare system to provide insights into travel patterns, including the most common times for travel, popular stations, trip durations, and user demographics. The program allows users to filter the data by city, month, and day of the week, and provides statistical summaries based on these filters.
 
-  
-
 ## Installation
 
 Ensure you have the following dependencies installed:
@@ -22,8 +20,6 @@ Usage
 Data Analysis
 
 This project explores data from the US bikeshare system to provide insights into travel patterns, including the most common times for travel, popular stations, trip durations, and user demographics. The program allows users to filter the data by city, month, and day of the week, and provides statistical summaries based on these filters.
-
-  
 
 ## Installation
 
